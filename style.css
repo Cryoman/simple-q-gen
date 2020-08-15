@@ -1,0 +1,54 @@
+html {
+    background-color: skyblue;
+}
+
+body {
+    display: grid;
+    place-items: center;
+    height: 100vh;
+}
+
+#main {
+    width: 400px;
+    height: 400;
+}
+
+#quotes {
+    width: 400px;
+    height: 390px;
+    background-color: aliceblue;
+    border-radius: 15px;
+}
+
+#btns {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin-top: 10px;
+}
+ 
+button {
+    border-radius: 50%;
+    width: 50px;
+    height: 50px;
+    background-color: aliceblue;
+    border: 1px solid black;
+    margin-left: 5px;
+    margin-right: 5px;
+    cursor: pointer;
+    outline: none;
+} 
+h2 {
+    padding: 5px;
+}
+.animate {
+    animation: rotation 0.3s  linear;
+}
+@keyframes rotation {
+    from {
+            transform: rotate(0deg);
+    }
+    to {
+            transform: rotate(180deg);
+    }
+}
